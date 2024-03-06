@@ -11,7 +11,7 @@
 }
 
 main {
-    width: 98%;
+    width: 96%;
     display: flex;
     justify-content: space-around;
 }
@@ -19,7 +19,7 @@ main {
 .campo__texto {
     border: none;
     color:#0A3871;
-    margin-top: 152px;
+    margin-top: 140px;
     margin-left: 50px;
     font-size: 2rem;
     text-transform: lowercase;
@@ -109,7 +109,7 @@ main {
     border-radius: 24px;
     font-size: 1rem;
     color: #0A3871;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 16px;
     padding: 12px;
 }
