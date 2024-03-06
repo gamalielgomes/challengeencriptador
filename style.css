@@ -1,0 +1,164 @@
+* {
+    background: #E5E5E5;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 190%;
+}
+
+.LogoAlura {
+    padding: 35% 5%;
+    
+}
+
+main {
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.campo__texto {
+    border: none;
+    color:#0A3871;
+    margin-top: 152px;
+    margin-left: 50px;
+    font-size: 2rem;
+    text-transform: lowercase;
+}
+
+::placeholder {color:#0A3871; }
+    .campo__texto:focus{
+        outline: none;
+    }
+
+.campo__informacao{
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#icone{
+    font-size: 0.75rem;
+    margin-right: 5px;
+    color: #495057;
+}
+
+
+.texto__recomendacao{
+    font-size: 0.75rem;
+    color: #495057;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.bt-encriptar {
+    width: 45%;
+    background-color: #0A3871;
+    border-color: #0A3871;
+    border-radius: 24px;
+    font-size: 1rem;
+    color: #E5E5E5;
+    padding: 12px;
+}
+
+.bt-descriptar {
+    width: 45%;
+    background: #D8DFE8;
+    border-radius: 24px;
+    border-color: #0A3871;
+    font-size: 1rem;
+    color: #0A3871;
+    padding: 12px;
+}
+
+.div__mensagem {
+    background-color: white;
+    border: none;
+    border-radius: 32px;
+    margin-top: 10px;
+    margin-left: 300px;
+    text-align: center;
+}
+
+.campo__mensagem {
+    background-color: white;
+    background-image: url(./imagens/boneco.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position-x: center;
+    background-position-y: 40px;
+    border: none;
+    border-radius: 32px;
+    color: #0A3871;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.campo__mensagem:focus{
+    outline: none;
+}
+
+.bt-copiar {
+    width: 80%;
+    background-color: white;
+    border-color: #0A3871;
+    border-radius: 24px;
+    font-size: 1rem;
+    color: #0A3871;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    padding: 12px;
+}
+
+@media(max-width: 1200px) {
+
+    * {
+        line-height: 170%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+    
+    .LogoAlura {
+        padding: 5%;
+    }
+
+    .campo__informacao {
+        margin-left: 24px;
+    }
+
+    .campo__texto {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 2px;
+    }
+
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 2px;
+        gap: 10px;
+    }
+
+    .bt-encriptar {
+        width: 90%;
+    }
+
+    .bt-descriptar {
+        width: 90%;
+    }
+    
+    .div__mensagem {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .secao__mensagem {
+        margin-bottom: 40px;
+    }
+}
