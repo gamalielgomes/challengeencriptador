@@ -18,7 +18,7 @@ main {
 .campo__texto {
     border: none;
     color:#0A3871;
-    margin-top: 140px;
+    padding-top: 140px;
     margin-left: 50px;
     font-size: 2rem;
     text-transform: lowercase;
