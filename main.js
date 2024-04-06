@@ -1,5 +1,5 @@
-const textArea = document.querySelector(".campo__texto")
-const mensagem = document.querySelector(".campo__mensagem")
+const textArea = document.querySelector(".mensagem_entrada")
+const mensagem = document.querySelector(".mensagem_saida")
 
 // As "chaves" de criptografia que utilizaremos são:
 // A letra "e" é convertida para "enter"

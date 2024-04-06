@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Encriptador v2.0</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/891ddb1342.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
-        <header>
-            <img class="LogoAlura" src="./imagens/LogoAlura.png" alt="Logo da Alura">
-        </header>
-        <section class="secao__texto">
-            <textarea class="campo__texto" cols="38" rows="7" placeholder="Digite seu texto" style="resize: none"></textarea>
-            <div class="campo__informacao">
-                <i class="fa-solid fa-circle-exclamation" id="icone"></i>
-                <h6 class="texto__recomendacao">Apenas letras minúsculas e sem acento.</h6>
+        <section>
+            <header>
+                <img class="logo" src="assets/LogoAlura.png" alt="Logo alura">
+            </header>
+            <div class="conteiner">
+                <textarea class="mensagem_entrada" cols="30" rows="10" placeholder="Digite seu texto" style="resize: none"></textarea>
+                <div class="informacao">
+                    <i class="fa-solid fa-circle-exclamation" id="icone"></i>
+                    <h6>Apenas letras minúsculas e sem acento.</h6>
+                </div>
+                <div class="botoes">
+                    <button class="estilo_btn" onclick="btnEncriptar()">Criptografar</button>
+                    <button class="estilo_btn" onclick="btnDesencriptar()">Descriptografar</button>
+                </div>
             </div>
-            <div class="botoes">
-                <button class="bt-encriptar" onclick="btnEncriptar()">Criptografar</button>
-                <button class="bt-descriptar" onclick="btnDesencriptar()">Descriptografar</button>
-            </div> 
         </section>
-        <section class="secao__mensagem">
-            <div class="div__mensagem">
-                <textarea class="campo__mensagem" cols="17" rows="10" style="resize: none" disabled></textarea>
-                <button class="bt-copiar" onclick="btncopiar()">Copiar</button>
+        <section class="secao_mensagem_saida">
+            <div class="conteiner_mensagem_saida">
+                <textarea class="mensagem_saida" cols="20" rows="13" style="resize: none" placeholder="Nenhuma mensagem encontrada" disabled></textarea>
+                <button class="estilo_btn" onclick="btncopiar()">Copiar    
+                </button>
             </div>
         </section>
     </main>
